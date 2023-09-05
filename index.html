@@ -1,13 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/style.css" />
+		<title>Event bus</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<main></main>
+			<aside></aside>
+			<footer><ol></ol></footer>
+		</div>
+
+		<script type="module" src="/src/main.ts"></script>
+
+		<template id="actorListTemplate">
+			<div class="actor-container">
+				<ul></ul>
+			</div>
+		</template>
+
+		<template class="actorFormTemplate">
+			<form class="actor-form">
+				<input type="text" placeholder="Actor name" />
+				<button>Add actor</button>
+			</form>
+		</template>
+
+		<template id="movieFormTemplate">
+			<form class="movie-form">
+				<input type="text" placeholder="Movie title" />
+				<button>Add movie</button>
+			</form>
+		</template>
+	</body>
 </html>
