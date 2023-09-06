@@ -1,4 +1,4 @@
-import { pubsub } from "./pub-sub";
+import { pubsub } from "./pubsub";
 
 type Render = (container: HTMLElement) => void;
 type Add = (event: Event) => void;
